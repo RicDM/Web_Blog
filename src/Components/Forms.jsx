@@ -1,8 +1,6 @@
 
 export function Forms(props) {
 
-    
-
     return (
         <div>
           <h1>Crie um novo post</h1>

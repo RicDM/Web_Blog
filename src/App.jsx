@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import { Post } from './Components/Post'
-import { Forms } from './Components/Forms'
+import { Header } from './Components/Header'
 
 function App() {
 
@@ -14,8 +13,14 @@ function App() {
   return (
     <>
       <div>
-        <Post/>
-        <Forms />
+        <div>
+          <Header/>
+        </div>
+        {/* <Post/>
+        <Forms /> */}
+        <div>
+          <Header/>
+        </div>
       </div>
     </>
   )
