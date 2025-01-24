@@ -1,11 +1,8 @@
 import { createContext } from "react";
 
-var PostObject = {
-
-    name: '',
-    title: '',
-    description: ''
-
+var PostsObject = {
+    posts:[],
+    setPosts:(n) => {}
 }
 
-export const PostsContext = createContext(PostObject)
+export const PostsContext = createContext(PostsObject)

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import { Header } from './Components/Header'
+import { PostsContext } from './Context/PostsContext'
 
 function App() {
 
@@ -16,8 +17,18 @@ function App() {
         <div>
           <Header/>
         </div>
-        {/* <Post/>
-        <Forms /> */}
+        <div>
+        <PostsContext.Provider value={{posts, setPosts}}>
+          <NameContext.Provider value={{name, setName}}>
+            <TitleContext.Provider value={{Title, setTitle}}>
+              <DescriptionContext.Provider value={{description, setDescription}}>
+                <Post/>
+                <Forms/>
+              </DescriptionContext.Provider>
+            </TitleContext.Provider>
+          </NameContext.Provider>
+        </PostsContext.Provider>
+        </div>
         <div>
           <Header/>
         </div>
