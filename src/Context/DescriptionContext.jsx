@@ -1,8 +1,3 @@
-import { createContext } from "react";
+import { createContext } from 'react';
 
-var DescriptionObject = {
-    description: '',
-    setDescription: (n) => {}
-}
-
-export const DescriptionContext = createContext(DescriptionObject)
+export const DescriptionContext = createContext();

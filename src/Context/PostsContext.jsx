@@ -1,8 +1,3 @@
-import { createContext } from "react";
+import { createContext } from 'react';
 
-var PostsObject = {
-    posts:[],
-    setPosts:(n) => {}
-}
-
-export const PostsContext = createContext(PostsObject)
+export const PostsContext = createContext();

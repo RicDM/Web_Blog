@@ -1,8 +1,3 @@
-import { createContext } from "react";
+import { createContext } from 'react';
 
-var NameObject = {
-    name: '',
-    setName: (n) => {}
-}
-
-export const NameContext = createContext(NameObject)
+export const NameContext = createContext();
